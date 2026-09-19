@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Academy - Minecraft ScreenShare & Rehberlik Akademisi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#070b19',
+                            800: '#0b132b',
+                            700: '#1c2541',
+                        },
+                        accent: {
+                            cyan: '#00f2fe',
+                            blue: '#4facfe',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #070b19;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.15);
+        }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-100 selection:bg-accent-cyan selection:text-dark-900">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent-blue to-accent-cyan flex items-center justify-center glow-effect">
+                    <i class="fa-solid fa-shield-halved text-dark-900 text-xl font-bold"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-accent-cyan bg-clip-text text-transparent">
+                    SS <span class="text-accent-cyan">Academy</span>
+                </span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#anasayfa" class="hover:text-accent-cyan transition">Ana Sayfa</a>
+                <a href="#egitimler" class="hover:text-accent-cyan transition">Eğitimler</a>
+                <a href="#hakkimizda" class="hover:text-accent-cyan transition">Hakkımızda</a>
+                <a href="#iletisim" class="hover:text-accent-cyan transition">İletişim</a>
+            </nav>
+
+            <div>
+                <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-accent-blue to-accent-cyan text-dark-900 font-bold text-sm shadow-lg hover:opacity-90 transition transform hover:-translate-y-0.5">
+                    Hemen Başla
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="pt-36 pb-20 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-cyan/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dark-700/60 border border-slate-700/80 text-accent-cyan text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-accent-cyan animate-pulse"></span> Yeni Nesil Minecraft ScreenShare & Rehberlik Akademisi
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Sunucu Güvenliğini ve Yönetimini <br>
+                <span class="bg-gradient-to-r from-accent-blue to-accent-cyan bg-clip-text text-transparent glow-text">SS Academy</span> ile Sağla
+            </h1>
+            
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-6">
+                Ücretsiz en iyi bilgiler SS Academy'de! Discord sunucumuza katıl, seni de güzel sunucularda yetkili yapalım.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold shadow-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-discord text-lg"></i> Discord'a Katıl & Yetkili Ol
+                </a>
+                <a href="#egitimler" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-dark-800 border border-slate-700 hover:border-accent-cyan/50 text-slate-200 font-semibold transition">
+                    Eğitimleri İncele
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-slate-800/80">
+                <div class="bg-dark-800/60 border border-slate-700/50 rounded-2xl p-6 hover:border-accent-cyan/40 transition">
+                    <div class="text-3xl font-extrabold text-accent-cyan">4+</div>
+                    <div class="text-sm text-slate-400 mt-1">Eğitim Kategorisi</div>
+                </div>
+                <div class="bg-dark-800/60 border border-slate-700/50 rounded-2xl p-6 hover:border-accent-cyan/40 transition">
+                    <div class="text-3xl font-extrabold text-accent-cyan">500+</div>
+                    <div class="text-sm text-slate-400 mt-1">Yetkili Yapılan Kişi</div>
+                </div>
+                <div class="bg-dark-800/60 border border-slate-700/50 rounded-2xl p-6 hover:border-accent-cyan/40 transition">
+                    <div class="text-3xl font-extrabold text-accent-cyan">15+</div>
+                    <div class="text-sm text-slate-400 mt-1">Kaliteli ScreenSharer</div>
+                </div>
+                <div class="bg-dark-800/60 border border-slate-700/50 rounded-2xl p-6 hover:border-accent-cyan/40 transition">
+                    <div class="text-3xl font-extrabold text-accent-cyan">%100</div>
+                    <div class="text-sm text-slate-400 mt-1">Başarı Oranı</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eğitimlerimiz (Levels & Rehberlik) -->
+    <section id="egitimler" class="py-20 bg-dark-800/40 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Popüler <span class="text-accent-cyan">Eğitimlerimiz</span></h2>
+                <p class="text-slate-400">Sektörün en çok aranan Minecraft hile tespit, ekran inceleme ve profesyonel rehberlik becerilerini öğrenin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Level 1 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-3xl p-6 hover:border-accent-cyan/60 transition duration-300 relative group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-cyan/10 text-accent-cyan flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan text-xs font-bold uppercase tracking-wider">LEVEL 1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Temel İnceleme</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Görev Yöneticisi kontrolleri, temel sistem logları, Prefetch kayıtları ve basit client tarama yöntemleri.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-700/60 pt-4">
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Görev Yöneticisi Analizi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> WinPrefetchView İncelemesi</li>
+                        </ul>
+                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-dark-700 hover:bg-accent-cyan hover:text-dark-900 text-slate-200 font-bold text-xs transition flex items-center justify-center gap-2">
+                            Eğitime Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-3xl p-6 hover:border-accent-cyan/60 transition duration-300 relative group flex flex-col justify-between shadow-xl">
+                    <div class="absolute -top-3 right-6 bg-gradient-to-r from-accent-blue to-accent-cyan text-dark-900 text-[10px] font-extrabold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-lg">
+                        POPÜLER
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-cyan/10 text-accent-cyan flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan text-xs font-bold uppercase tracking-wider">LEVEL 2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Orta Seviye Analiz</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Process Hacker 2 kullanımı, USN Journal takibi ve gizli hile dosyalarını tespit etme teknikleri.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-700/60 pt-4">
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Process Hacker 2 Derin Tarama</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> USN Journal Log Kurtarma</li>
+                        </ul>
+                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-accent-blue to-accent-cyan text-dark-900 font-bold text-xs hover:opacity-90 transition flex items-center justify-center gap-2 shadow-lg">
+                            Eğitime Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-3xl p-6 hover:border-accent-cyan/60 transition duration-300 relative group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-cyan/10 text-accent-cyan flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-shield-cat"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan text-xs font-bold uppercase tracking-wider">LEVEL 3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">İleri Seviye Uzmanlık</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Shellbag analizleri, derinlemesine hafıza incelemesi ve profesyonel ScreenShare (AAC) raporlama süreçleri.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-700/60 pt-4">
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Shellbag ve Kalıntı Analizi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Profesyonel Staff Raporlama</li>
+                        </ul>
+                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-dark-700 hover:bg-accent-cyan hover:text-dark-900 text-slate-200 font-bold text-xs transition flex items-center justify-center gap-2">
+                            Eğitime Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rehberlik Eğitimi -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-3xl p-6 hover:border-accent-cyan/60 transition duration-300 relative group flex flex-col justify-between shadow-xl">
+                    <div class="absolute -top-3 right-6 bg-gradient-to-r from-purple-500 to-accent-cyan text-dark-900 text-[10px] font-extrabold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-lg">
+                        YENİ & ÖZEL
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-cyan/10 text-accent-cyan flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-accent-cyan/10 text-accent-cyan text-xs font-bold uppercase tracking-wider">REHBER</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Rehberlik Eğitimi</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Sunucu içi oyuncu iletişimi, kriz yönetimi, kurallara uyum sağlatma ve profesyonel rehberlik taktikleri.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-700/60 pt-4">
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Oyuncu İletişimi & Diksiyon</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent-cyan"></i> Kriz ve Problem Çözme</li>
+                        </ul>
+                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-accent-blue to-accent-cyan text-dark-900 font-bold text-xs hover:opacity-90 transition flex items-center justify-center gap-2 shadow-lg">
+                            Eğitime Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda" class="py-20 border-t border-slate-800/50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-dark-800 border border-slate-700/60 rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-accent-cyan/5 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <h2 class="text-3xl font-extrabold mb-6 text-white">HAKKIMIZDA</h2>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                    SS Academy, Minecraft sunucu güvenliğini en üst seviyeye çıkarmak, hile tespit mekanizmalarını geliştirmek ve ekran inceleme (Screenshare) prosedürlerini standartlaştırmak amacıyla kurulmuş yenilikçi bir eğitim platformudur. Sunucu yöneticilerine, yetkililere ve güvenlik meraklılarına temel seviyeden uzmanlık seviyesine kadar rehberlik eden modern analiz yöntemleri sunar. Profesyonel screenshare'lik için doğru yer SS Academy'dir.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim / Discord Bölümü -->
+    <section id="iletisim" class="py-20 bg-dark-800/40 border-t border-slate-800/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="w-16 h-16 rounded-2xl bg-[#5865F2]/10 text-[#5865F2] flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fa-brands fa-discord"></i>
+            </div>
+            <h2 class="text-3xl font-bold mb-4">Discord Topluluğumuza Katılın</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">Ücretsiz en iyi bilgiler SS Academy'de! Discord sunucumuza katıl, seni de güzel sunucularda yetkili yapalım.</p>
+            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold text-base shadow-lg transition transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-discord text-xl"></i> Sunucuya Katıl & Yetkili Ol
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800/80 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 SS Academy. Tüm hakları saklıdır. Minecraft ScreenShare & Rehberlik Eğitimi.</p>
+    </footer>
+
+</body>
+</html>
