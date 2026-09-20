@@ -11,119 +11,84 @@
             theme: {
                 extend: {
                     colors: {
-                        vulkan: {
-                            900: '#050507',
-                            800: '#0c0b10',
-                            700: '#15141d',
-                        },
-                        danger: {
-                            red: '#0066ff',
-                            orange: '#00f0ff',
-                            amber: '#7000ff'
-                        },
-                        ash: {
-                            light: '#e0e0e0',
-                            muted: '#9e9e9e'
-                        }
+                        vulkan: { 900: '#050507', 800: '#0c0b10', 700: '#15141d' },
+                        danger: { red: '#0066ff', orange: '#00f0ff', amber: '#7000ff' }
                     }
                 }
             }
         }
     </script>
-    <!-- FontAwesome Icons -->
+    <!-- FontAwesome & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #050507;
-            color: #e0e0e0;
-            overflow-x: hidden;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #050507; color: #e0e0e0; overflow-x: hidden; }
         .vulkan-box {
             background: linear-gradient(135deg, rgba(21, 20, 29, 0.75) 0%, rgba(12, 11, 16, 0.9) 100%);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 0, 85, 0.12);
+            border: 1px solid rgba(0, 102, 255, 0.15);
             box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8);
         }
-        .vulkan-box:hover {
-            border-color: rgba(255, 0, 85, 0.4);
-            box-shadow: 0 0 40px rgba(255, 0, 85, 0.2);
-        }
-        .red-glow {
-            text-shadow: 0 0 25px rgba(255, 0, 85, 0.5);
-        }
-        .mesh-bg {
-            background-image: radial-gradient(rgba(255, 0, 85, 0.08) 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
+        .vulkan-box:hover { border-color: rgba(0, 102, 255, 0.4); box-shadow: 0 0 40px rgba(0, 102, 255, 0.2); }
+        .red-glow { text-shadow: 0 0 25px rgba(0, 102, 255, 0.5); }
+        .mesh-bg { background-image: radial-gradient(rgba(0, 102, 255, 0.08) 1px, transparent 1px); background-size: 24px 24px; }
     </style>
 </head>
-<body class="bg-vulkan-900 text-slate-100 selection:bg-danger-red selection:text-vulkan-900 mesh-bg">
+<body class="bg-vulkan-900 text-slate-100 mesh-bg">
 
-    <!-- Bottom-to-Top Floating Nav -->
+    <!-- Navigasyon -->
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-7xl">
-        <div class="vulkan-box rounded-2xl px-6 py-4 flex items-center justify-between border border-danger-red/20 shadow-2xl backdrop-blur-2xl">
-            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-danger-red to-danger-orange text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-danger-red/30 hover:opacity-95 transition transform hover:scale-105 flex items-center gap-2">
+        <div class="vulkan-box rounded-2xl px-6 py-4 flex items-center justify-between border border-danger-red/20 shadow-2xl">
+            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-danger-red to-danger-orange text-white font-black text-xs uppercase tracking-wider shadow-lg flex items-center gap-2">
                 <i class="fa-brands fa-discord text-sm"></i> Discord
             </a>
-
             <nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-300">
-                <a href="#ustunluk" class="hover:text-danger-red transition duration-300">Merkez</a>
-                <a href="#prosedur" class="hover:text-danger-red transition duration-300">Müfredat</a>
-                <a href="#manifesto" class="hover:text-danger-red transition duration-300">Vizyon</a>
-                <a href="#ag" class="hover:text-danger-red transition duration-300">İletişim</a>
+                <a href="#ustunluk" class="hover:text-danger-red transition">Merkez</a>
+                <a href="#prosedur" class="hover:text-danger-red transition">Müfredat</a>
+                <a href="#manifesto" class="hover:text-danger-red transition">Vizyon</a>
+                <a href="#ag" class="hover:text-danger-red transition">İletişim</a>
             </nav>
-
             <div class="flex items-center gap-3">
                 <div class="flex flex-col text-right">
                     <span class="text-lg font-black tracking-wider text-white">SS <span class="text-danger-red">ACADEMY</span></span>
                     <span class="text-[10px] uppercase tracking-widest text-danger-orange font-semibold">Vulkan Protocol</span>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-danger-red to-danger-orange flex items-center justify-center shadow-lg shadow-danger-red/20">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-danger-red to-danger-orange flex items-center justify-center shadow-lg">
                     <i class="fa-solid fa-shield-virus text-white text-lg font-black"></i>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section (Genişletilmiş 3'lü Sütun Düzeni) -->
+    <!-- Hero Bölümü (Sol Kutu - Orta Metin - Sağ Boost Eventi) -->
     <section id="ustunluk" class="pt-48 pb-28 relative overflow-hidden">
-        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-gradient-to-r from-danger-red/15 via-danger-orange/10 to-vulkan-700/20 rounded-full blur-[150px] pointer-events-none"></div>
-
-        <div class="max-w-[1400px] mx-auto px-6 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="max-w-[1440px] mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 
-                <!-- 1. Sol Sütun: VULKAN_DEFENSE.SYS -->
+                <!-- 1. SOL: VULKAN_DEFENSE.SYS -->
                 <div class="lg:col-span-3">
                     <div class="vulkan-box rounded-3xl p-6 relative overflow-hidden border border-danger-red/25 shadow-2xl">
-                        <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-danger-red/10 rounded-full blur-2xl"></div>
-                        
                         <div class="flex items-center justify-between mb-6 pb-3 border-b border-danger-red/20">
                             <span class="text-[11px] font-mono text-danger-red tracking-widest uppercase">vulkan_defense.sys</span>
                             <div class="flex items-center gap-1.5">
                                 <div class="w-2.5 h-2.5 rounded-full bg-danger-red animate-pulse"></div>
                                 <div class="w-2.5 h-2.5 rounded-full bg-danger-orange"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-danger-amber"></div>
                             </div>
                         </div>
-
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <span class="text-xs font-semibold text-slate-300"><i class="fa-solid fa-layer-group text-danger-red mr-1.5"></i> Eğitim Modülü</span>
+                                <span class="text-xs font-semibold text-slate-300">Eğitim Modülü</span>
                                 <span class="text-sm font-black text-white font-mono">4+ Alan</span>
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-xs font-semibold text-slate-300"><i class="fa-solid fa-user-shield text-danger-orange mr-1.5"></i> Yetkili Yapılan</span>
+                                <span class="text-xs font-semibold text-slate-300">Yetkili Yapılan</span>
                                 <span class="text-sm font-black text-danger-red font-mono">2+ Uzman</span>
                             </div>
                             <div class="flex items-center justify-between">
-                                <span class="text-xs font-semibold text-slate-300"><i class="fa-solid fa-award text-danger-amber mr-1.5"></i> Başarı Oranı</span>
+                                <span class="text-xs font-semibold text-slate-300">Başarı Oranı</span>
                                 <span class="text-sm font-black text-white font-mono">%100 Net</span>
                             </div>
                         </div>
-
                         <div class="mt-6 pt-4 border-t border-danger-red/20 text-center">
                             <div class="inline-block px-3 py-1.5 rounded-xl bg-danger-red/10 text-danger-red text-[11px] font-bold font-mono border border-danger-red/30">
                                 STATUS: PROTOKOL AKTİF
@@ -132,24 +97,21 @@
                     </div>
                 </div>
 
-                <!-- 2. Orta Sütun: Ana Başlık ve Açıklamalar -->
-                <div class="lg:col-span-6 text-left px-2">
+                <!-- 2. ORTA: Başlık ve Açıklamalar -->
+                <div class="lg:col-span-6 text-left px-4">
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full vulkan-box text-danger-orange text-xs font-bold mb-6 border border-danger-orange/30">
                         <i class="fa-solid fa-triangle-exclamation text-danger-red"></i> 
                         <span>AGRESİF GÜVENLİK VE EKRAN İNCELEME PROTOKOLÜ</span>
                     </div>
-
                     <h1 class="text-3xl sm:text-5xl font-black tracking-tight mb-6 leading-[1.08]">
                         En İyi Screenshare bilgileri Burada, <br>
                         <span class="bg-gradient-to-r from-danger-red via-danger-orange to-danger-amber bg-clip-text text-transparent red-glow">Ücretsiz Bir Şekilde!</span>
                     </h1>
-
                     <p class="text-slate-300 text-sm md:text-base mb-8 leading-relaxed font-medium">
                         Büyük sunucularda AAC rolünü almak istiyor musun? O zaman burada biraz vakit geçirmelisin.
                     </p>
-
                     <div class="flex flex-wrap items-center gap-4">
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-7 py-3.5 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold text-xs shadow-xl shadow-[#5865F2]/30 transition transform hover:-translate-y-1 flex items-center gap-2.5">
+                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-7 py-3.5 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold text-xs shadow-xl flex items-center gap-2.5">
                             <i class="fa-brands fa-discord text-lg"></i> Discord'a Katıl & Yetkili Ol
                         </a>
                         <a href="#prosedur" class="px-7 py-3.5 rounded-2xl vulkan-box hover:border-danger-red/50 text-slate-200 font-bold text-xs transition">
@@ -158,16 +120,13 @@
                     </div>
                 </div>
 
-                <!-- 3. Sağ Sütun: BOOST EVENTİ -->
+                <!-- 3. SAĞ: BOOST EVENTİ KUTUSU -->
                 <div class="lg:col-span-3">
-                    <div class="vulkan-box rounded-3xl p-6 relative overflow-hidden border border-pink-500/30 shadow-2xl group">
-                        <div class="absolute -right-12 -top-12 w-48 h-48 bg-pink-500/10 rounded-full blur-2xl"></div>
-                        
+                    <div class="vulkan-box rounded-3xl p-6 relative overflow-hidden border border-pink-500/40 shadow-2xl">
                         <div class="flex items-center justify-between mb-6 pb-3 border-b border-pink-500/20">
                             <span class="text-[11px] font-mono text-pink-400 tracking-widest uppercase font-bold"><i class="fa-solid fa-rocket mr-1"></i> BOOST EVENT</span>
                             <span class="px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-400 text-[10px] font-black uppercase tracking-wider animate-pulse">ÖDÜLLÜ</span>
                         </div>
-
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
                                 <span class="text-xs font-semibold text-slate-300"><i class="fa-solid fa-gift text-pink-400 mr-1.5"></i> Etkinlik Ödülü</span>
@@ -182,9 +141,8 @@
                                 <span class="text-xs font-black text-white font-mono">Sınırlı Kontenjan</span>
                             </div>
                         </div>
-
                         <div class="mt-6 pt-4 border-t border-pink-500/20">
-                            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-extrabold text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-pink-600/30 hover:opacity-95">
+                            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-extrabold text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-pink-600/30">
                                 <i class="fa-solid fa-server"></i> Sunucuya Boost Bas
                             </a>
                         </div>
@@ -195,161 +153,48 @@
         </div>
     </section>
 
-    <!-- Prosedür / Müfredat Section -->
+    <!-- Müfredat Bölümü -->
     <section id="prosedur" class="py-28 relative">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <span class="text-danger-red font-mono text-xs uppercase tracking-widest font-bold">VULKAN MÜFREDATI</span>
-                    <h2 class="text-3xl md:text-5xl font-black mt-2">Eğitim <span class="text-danger-orange">Aşamaları</span></h2>
-                </div>
-                <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
-                    Sıfırdan zirveye uzanan bu sert disiplinde; en gizli hile kalıntılarını yakalama, sistem analizi ve liderlik eğitimlerini alın.
-                </p>
+            <div class="text-center mb-16">
+                <span class="text-danger-red font-mono text-xs uppercase tracking-widest font-bold">VULKAN MÜFREDATI</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2">Eğitim <span class="text-danger-orange">Aşamaları</span></h2>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
-                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between transition duration-300 group">
+                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-[10px] font-mono tracking-widest text-danger-red uppercase font-bold">FAZ 01</span>
-                            <div class="w-10 h-10 rounded-xl bg-danger-red/10 text-danger-red flex items-center justify-center text-lg font-bold group-hover:scale-110 transition">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-black text-white mb-3">Temel İnceleme</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
-                            Everything,Ocean,Anydesk,Prefect analizi vb.
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="space-y-2 text-xs text-slate-300 mb-6 border-t border-danger-red/20 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-red"></i> Amatör Uygulama Eğitimleri</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-red"></i> Prefetch Kayıtları</li>
-                        </ul>
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-vulkan-700 hover:bg-danger-red hover:text-white text-slate-200 font-bold text-xs transition flex items-center justify-center gap-2">
-                            Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
+                        <span class="text-[10px] font-mono text-danger-red uppercase font-bold">FAZ 01</span>
+                        <h3 class="text-xl font-black text-white mt-3 mb-2">Temel İnceleme</h3>
+                        <p class="text-slate-400 text-xs">Everything, Ocean, Anydesk, Prefetch analizi.</p>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between transition duration-300 group relative border-danger-red/40">
-                    <div class="absolute -top-3 left-6 bg-gradient-to-r from-danger-red to-danger-orange text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
-                        POPÜLER
-                    </div>
+                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between border-danger-red/40">
                     <div>
-                        <div class="flex items-center justify-between mb-6 mt-2">
-                            <span class="text-[10px] font-mono tracking-widest text-danger-orange uppercase font-bold">FAZ 02</span>
-                            <div class="w-10 h-10 rounded-xl bg-danger-orange/10 text-danger-orange flex items-center justify-center text-lg font-bold group-hover:scale-110 transition">
-                                <i class="fa-solid fa-laptop-code"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-black text-white mb-3">Orta Seviye Analiz</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
-                            Process Hacker 2, USN Journal log takibi ve client kalıntılarını çıkarma teknikleri.
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="space-y-2 text-xs text-slate-300 mb-6 border-t border-danger-red/20 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-orange"></i> Process Hacker 2</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-orange"></i> USN Journal Tarama</li>
-                        </ul>
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-danger-red to-danger-orange text-white font-black text-xs transition flex items-center justify-center gap-2 shadow-lg">
-                            Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
+                        <span class="text-[10px] font-mono text-danger-orange uppercase font-bold">FAZ 02</span>
+                        <h3 class="text-xl font-black text-white mt-3 mb-2">Orta Seviye</h3>
+                        <p class="text-slate-400 text-xs">Process Hacker 2, USN Journal log takibi.</p>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between transition duration-300 group">
+                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-6">
-                            <span class="text-[10px] font-mono tracking-widest text-danger-amber uppercase font-bold">FAZ 03</span>
-                            <div class="w-10 h-10 rounded-xl bg-danger-amber/10 text-danger-amber flex items-center justify-center text-lg font-bold group-hover:scale-110 transition">
-                                <i class="fa-solid fa-shield-cat"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-black text-white mb-3">İleri Uzmanlık</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
-                            Shellbag analizleri, derinlemesine bellek incelemesi ve profesyonel ScreenShare bilgileri
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="space-y-2 text-xs text-slate-300 mb-6 border-t border-danger-red/20 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-amber"></i> Shellbag Analizi</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-amber"></i> Profesyonel Kadrodan Eğitim</li>
-                        </ul>
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-vulkan-700 hover:bg-danger-amber hover:text-vulkan-900 text-slate-200 font-bold text-xs transition flex items-center justify-center gap-2">
-                            Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
+                        <span class="text-[10px] font-mono text-danger-amber uppercase font-bold">FAZ 03</span>
+                        <h3 class="text-xl font-black text-white mt-3 mb-2">İleri Uzmanlık</h3>
+                        <p class="text-slate-400 text-xs">Shellbag analizleri ve derinlemesine bellek incelemesi.</p>
                     </div>
                 </div>
-
-                <!-- Card 4 -->
-                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between transition duration-300 group relative border-danger-amber/40">
-                    <div class="absolute -top-3 left-6 bg-gradient-to-r from-danger-orange to-danger-amber text-vulkan-900 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
-                        ÖZEL
-                    </div>
+                <div class="vulkan-box rounded-3xl p-8 flex flex-col justify-between border-danger-amber/40">
                     <div>
-                        <div class="flex items-center justify-between mb-6 mt-2">
-                            <span class="text-[10px] font-mono tracking-widest text-danger-red uppercase font-bold">FAZ 04</span>
-                            <div class="w-10 h-10 rounded-xl bg-danger-red/10 text-danger-red flex items-center justify-center text-lg font-bold group-hover:scale-110 transition">
-                                <i class="fa-solid fa-comments"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-black text-white mb-3">Rehberlik Eğitimi</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
-                            Sunucu içi kusursuz oyuncu iletişimi, profesyonel kriz yönetimi ve liderlik stratejileri.
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="space-y-2 text-xs text-slate-300 mb-6 border-t border-danger-red/20 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-red"></i> Diksiyon & İletişim</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-danger-red"></i> Kriz Yönetimi</li>
-                        </ul>
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-danger-orange to-danger-amber text-vulkan-900 font-black text-xs transition flex items-center justify-center gap-2 shadow-lg">
-                            Katıl <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                        </a>
+                        <span class="text-[10px] font-mono text-danger-red uppercase font-bold">FAZ 04</span>
+                        <h3 class="text-xl font-black text-white mt-3 mb-2">Rehberlik</h3>
+                        <p class="text-slate-400 text-xs">Sunucu içi iletişim ve profesyonel kriz yönetimi.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Manifesto / Hakkımızda Section -->
-    <section id="manifesto" class="py-24 relative">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="vulkan-box rounded-3xl p-10 md:p-16 text-center relative overflow-hidden border border-danger-red/20">
-                <div class="absolute -right-20 -top-20 w-64 h-64 bg-danger-red/10 rounded-full blur-3xl pointer-events-none"></div>
-                
-                <span class="text-danger-red font-mono text-xs uppercase tracking-widest font-bold">VULKAN MANİFESTOSU</span>
-                <h2 class="text-3xl md:text-4xl font-black mt-2 mb-6 text-white">HAKKIMIZDA</h2>
-                
-                <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-medium">
-                    Ücretsiz en iyi bilgiler SS Academy'de! Discord sunucumuza katıl ve sen de Screenshare
-                    dünyasına ilk adımını at. Ticket açarak bire bir özel ders talebinde bulunabilirsin.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- İletişim Section -->
-    <section id="ag" class="py-28 text-center relative border-t border-danger-red/10">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="w-20 h-20 rounded-3xl bg-[#5865F2]/10 text-[#5865F2] flex items-center justify-center text-4xl mx-auto mb-8 shadow-inner border border-[#5865F2]/20">
-                <i class="fa-brands fa-discord"></i>
-            </div>
-            <h2 class="text-3xl md:text-5xl font-black mb-4">Aramıza Katılın</h2>
-            <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold text-base shadow-2xl shadow-[#5865F2]/30 transition duration-300 transform hover:-translate-y-1">
-                <i class="fa-brands fa-discord text-2xl"></i> Discord Sunucusuna Katıl
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 border-t border-danger-red/10 text-center text-slate-500 text-xs font-mono">
+    <!-- İletişim / Footer -->
+    <footer id="ag" class="py-12 border-t border-danger-red/10 text-center text-slate-500 text-xs font-mono">
         <p>&copy; 2026 SS Academy. Tüm hakları saklıdır. Cyber Vulkan Security Core.</p>
     </footer>
 
