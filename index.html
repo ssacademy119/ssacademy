@@ -60,7 +60,7 @@
         </div>
     </header>
 
-    <!-- Hero Bölümü (Sol Kutu - Orta Metin - Sağ Boost Eventi) -->
+    <!-- Hero Bölümü -->
     <section id="ustunluk" class="pt-48 pb-28 relative overflow-hidden">
         <div class="max-w-[1440px] mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <!-- 2. ORTA: Başlık ve Açıklamalar -->
+                <!-- 2. ORTA: Başlık, Açıklama ve Büyütülmüş İncele Butonu -->
                 <div class="lg:col-span-6 text-left px-4">
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full vulkan-box text-danger-orange text-xs font-bold mb-6 border border-danger-orange/30">
                         <i class="fa-solid fa-triangle-exclamation text-danger-red"></i> 
@@ -110,18 +110,17 @@
                     <p class="text-slate-300 text-sm md:text-base mb-8 leading-relaxed font-medium">
                         Büyük sunucularda AAC rolünü almak istiyor musun? O zaman burada biraz vakit geçirmelisin.
                     </p>
-                    <div class="flex flex-wrap items-center gap-4">
-                        <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="px-7 py-3.5 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold text-xs shadow-xl flex items-center gap-2.5">
-                            <i class="fa-brands fa-discord text-lg"></i> Discord'a Katıl & Yetkili Ol
-                        </a>
-                        <a href="#prosedur" class="px-7 py-3.5 rounded-2xl vulkan-box hover:border-danger-red/50 text-slate-200 font-bold text-xs transition">
-                            Neler Bulunduğunu İncele
+                    <div>
+                        <!-- Büyütülmüş İncele Butonu -->
+                        <a href="#prosedur" class="inline-flex items-center justify-center px-9 py-4 rounded-2xl vulkan-box hover:border-danger-red/60 text-slate-100 font-extrabold text-sm md:text-base transition transform hover:scale-105 shadow-xl">
+                            Neler Bulunduğunu İncele <i class="fa-solid fa-arrow-down ml-2 text-xs text-danger-orange"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- 3. SAĞ: BOOST EVENTİ KUTUSU -->
-                <div class="lg:col-span-3">
+                <!-- 3. SAĞ: BOOST EVENTİ KUTUSU VE ALTINDAKİ DİSCORD BUTONU -->
+                <div class="lg:col-span-3 space-y-4">
+                    <!-- Boost Eventi Kutusu -->
                     <div class="vulkan-box rounded-3xl p-6 relative overflow-hidden border border-pink-500/40 shadow-2xl">
                         <div class="flex items-center justify-between mb-6 pb-3 border-b border-pink-500/20">
                             <span class="text-[11px] font-mono text-pink-400 tracking-widest uppercase font-bold"><i class="fa-solid fa-rocket mr-1"></i> BOOST EVENT</span>
@@ -147,6 +146,11 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Boost Eventinin Altına Eklenen Discord Butonu -->
+                    <a href="https://discord.gg/PqFxC29NBT" target="_blank" class="w-full py-3.5 px-5 rounded-2xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-extrabold text-xs transition flex items-center justify-center gap-2.5 shadow-xl shadow-[#5865F2]/30">
+                        <i class="fa-brands fa-discord text-base"></i> Discord'a Katıl & Yetkili Ol
+                    </a>
                 </div>
 
             </div>
